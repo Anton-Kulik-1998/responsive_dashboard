@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/constants.dart';
+import 'package:responsive_dashboard/theme/constants.dart';
 
 class CloudStorageInfo {
   final String svgSrc, title, totalStorage;
