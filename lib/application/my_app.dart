@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/screens/main/main_screen.dart';
 import 'package:responsive_dashboard/theme/my_theme.dart';
 
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
