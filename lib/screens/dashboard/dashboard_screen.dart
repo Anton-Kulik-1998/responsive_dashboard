@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/screens/components/components.dart';
+import 'package:responsive_dashboard/screens/components/recent_files.dart';
 import 'package:responsive_dashboard/screens/dashboard/ui/ui.dart';
 import 'package:responsive_dashboard/theme/constants.dart';
 
@@ -22,7 +23,13 @@ class DashboardScreen extends StatelessWidget {
               children: [
                 Expanded(
                   flex: 5,
-                  child: MyFiels(),
+                  child: Column(
+                    children: [
+                      MyFiels(),
+                      SizedBox(height: defaultPadding),
+                      RecentFiles(),
+                    ],
+                  ),
                 ),
                 SizedBox(
                   width: defaultPadding,
