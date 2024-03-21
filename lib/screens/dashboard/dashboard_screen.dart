@@ -8,13 +8,13 @@ class DashboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: SingleChildScrollView(
-        padding: const EdgeInsets.all(defaultPadding),
+        padding: EdgeInsets.all(defaultPadding),
         child: Column(
           children: [
-            const Header(),
-            const SizedBox(
+            Header(),
+            SizedBox(
               height: defaultPadding,
             ),
             Row(
@@ -22,15 +22,12 @@ class DashboardScreen extends StatelessWidget {
               children: [
                 Expanded(
                   flex: 5,
-                  child: Container(
-                    height: 500,
-                    color: Colors.white,
-                  ),
+                  child: MyFiels(),
                 ),
-                const SizedBox(
+                SizedBox(
                   width: defaultPadding,
                 ),
-                const Expanded(
+                Expanded(
                   flex: 2,
                   child: StorageDetails(),
                 ),
